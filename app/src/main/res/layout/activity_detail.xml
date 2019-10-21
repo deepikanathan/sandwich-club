@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--SrollView to show the Sandwich details-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.udacity.sandwichclub.DetailActivity">
+
+    <!--Contents are arranged one below the other vertically in a LinearLayout-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--ImageView to show the Sandwich picture-->
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/sandwich_picture_content_description"
+            android:scaleType="centerCrop" />
+
+        <!--Label - Also Known as-->
+        <TextView
+            android:id="@+id/also_known_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_also_known_as_label"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"/>
+        <!--Value - Also Known as-->
+        <TextView
+            android:id="@+id/also_known_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <!--Label - Place of Origin-->
+        <TextView
+            android:id="@+id/origin_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_place_of_origin_label"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"/>
+        <!--Value - Place of Origin-->
+        <TextView
+            android:id="@+id/origin_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <!--Label - Description-->
+        <TextView
+            android:id="@+id/description_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_description_label"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"/>
+        <!--Value - Description-->
+        <TextView
+            android:id="@+id/description_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+
+        <!--Label - Ingredients-->
+        <TextView
+            android:id="@+id/ingredients_lbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/detail_ingredients_label"
+            android:textStyle="bold"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="5dp"/>
+        <!--Value - Ingredients-->
+        <TextView
+            android:id="@+id/ingredients_val"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"/>
+    </LinearLayout>
+</ScrollView>
